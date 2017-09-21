@@ -1,4 +1,4 @@
-package com.wxjoy.habreyapp;
+package com.wxjoy.hambreyapp;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

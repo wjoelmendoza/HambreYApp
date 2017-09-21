@@ -1,4 +1,4 @@
-package com.wxjoy.habreyapp;
+package com.wxjoy.hambreyapp;
 
 import org.junit.Test;
 

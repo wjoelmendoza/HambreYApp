@@ -1,4 +1,4 @@
-package com.wxjoy.habreyapp;
+package com.wxjoy.hambreyapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
