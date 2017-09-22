@@ -9,7 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/mariadb-java-client-2.1.1" />
+            <option value="$PROJECT_DIR$/mysql-connector-java-5.1.40-bin" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

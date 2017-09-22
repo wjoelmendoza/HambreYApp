@@ -9,16 +9,20 @@ import java.sql.SQLException;
  */
 
 public class Conexion {
-    private static final String USUARIO ="ayduser";
-    private static final String PASS = "123456789";
-    private static final String DB = "jdbc:mysql://198.199.102.135/ayd2";
+    private static final String USUARIO ="root";
+    private static final String PASS = "w1j2m3";
+    private static final String DB = "jdbc:mysql://10.0.3.192:3306/dbP2AYD2";
     private  Connection con;
 
     public Conexion(){
-        try {
-            con = DriverManager.getConnection(DB,USUARIO,PASS);
-        }catch (SQLException e){
 
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            con =(Connection) DriverManager.getConnection(DB,USUARIO,PASS);
+        }catch (SQLException e){
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
         }
     }
 

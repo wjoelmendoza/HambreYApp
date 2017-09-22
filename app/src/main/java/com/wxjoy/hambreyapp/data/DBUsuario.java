@@ -44,6 +44,7 @@ public class DBUsuario {
             for(int i = 0; i<obj.length; i++){
                 obj[i] = rset.getObject(i+1);
             }
+            con.cerrarConexion();
 
         } catch (SQLException e) {
             e.printStackTrace();
