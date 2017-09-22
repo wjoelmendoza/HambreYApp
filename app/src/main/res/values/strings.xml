@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">HabreYApp</string>
+    <string name="app_name">HambreYApp</string>
+    <string name="str_usuario">Correo</string>
+    <string name="str_contraseña">Contraseña</string>
+    <string name="str_aceptar">Aceptar</string>
 </resources>

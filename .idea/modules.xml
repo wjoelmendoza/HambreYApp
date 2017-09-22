@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HabreYApp.iml" filepath="$PROJECT_DIR$/HabreYApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mariadb-java-client-2.1.1/mariadb-java-client-2.1.1.iml" filepath="$PROJECT_DIR$/mariadb-java-client-2.1.1/mariadb-java-client-2.1.1.iml" />
     </modules>
   </component>
 </project>
