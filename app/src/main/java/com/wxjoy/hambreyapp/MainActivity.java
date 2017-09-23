@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.wxjoy.hambreyapp.data.DBUsuario;
 import com.wxjoy.hambreyapp.logica.Usuario;
@@ -24,8 +25,14 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void btnAceptar(View view){
-        Login lg = new Login();
-        lg.execute(txtCorreo.getText().toString(),txtPass.getText().toString());
+        String correo = txtCorreo.getText().toString();
+        String pass = txtPass.getText().toString();
+        if(correo.length() !=0 && pass.length() !=0) {
+            Login lg = new Login();
+            lg.execute(txtCorreo.getText().toString(), txtPass.getText().toString());
+        }else{
+            Toast.makeText(this,"Todos los campos son obligatorios",Toast.LENGTH_LONG).show();
+        }
     }
 
     private void continuar(Usuario user){
@@ -33,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
             Intent actB = new Intent(this, ActBienvenida.class);
             actB.putExtra("usuario", user);
             startActivity(actB);
+        }else{
+            Toast.makeText(this,"Credenciales invalidas", Toast.LENGTH_LONG).show();
         }
     }
 
