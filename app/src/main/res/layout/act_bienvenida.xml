@@ -1,12 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="0.5"
+    android:stretchColumns="*"
+    android:padding="5dp">
 
-    <TextView
-        android:id="@+id/lbl_b_bienvenido"
-        android:layout_width="match_parent"
+    <TableRow
+        android:id="@+id/tblR0"
         android:layout_height="wrap_content"
-        android:ems="12"
-        android:text="" />
-</LinearLayout>
+        android:layout_width="match_parent"
+
+        tools:ignore="UselessParent">
+        <TextView
+            android:id="@+id/lbl_b_bienvenido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/tblR1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+
+        tools:ignore="UselessParent">
+        <TextView
+            android:id="@+id/lbl_b_rest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/str_rest" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/tblR2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="1">
+        <!--<ScrollView
+            android:id="@+id/scv_rest"
+            android:layout_width="match_parent"
+            android:layout_span="2"
+            tools:ignore="UselessParent">
+            <TableLayout
+                android:id="@+id/tbl_restaurantes"
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:stretchColumns="*"
+                android:layout_height="wrap_content">
+
+            </TableLayout>
+        </ScrollView>-->
+        <ListView
+            android:id="@+id/lst_view"
+            android:layout_width="match_parent"
+            >
+
+        </ListView>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tblR3"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        >
+        <TextView
+            android:id="@+id/lbl_vacio_r"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+    </TableRow>
+</TableLayout>
