@@ -63,7 +63,6 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(Usuario usr){
             continuar(usr);
-            System.out.println("Se termino el proceso");
         }
     }
 }
