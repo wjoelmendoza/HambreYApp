@@ -47,8 +47,16 @@ public class ActBienvenida extends AppCompatActivity {
         lstVRest.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view,int position, long id) {
-                String item =""+ lstRest.get(position).getId();
+                String item ;
+                Restaurante rest = lstRest.get(position);
+                item = ""+ rest.getId();
                 Toast.makeText(cont,"You selected : " + item,Toast.LENGTH_SHORT).show();
+                /*TODO
+                * Descomentar en NextAct.class sustituirlo por la siguiente actividad
+                 Intent intent = Intent(cont, NextAct.class);
+                intent.putExtra("codRest", rest.getId());
+                startActivity(intent);
+                */
             }
         });
         Intent intent = this.getIntent();
